@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickGo - Compare Cab Fares</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container text-center">
+            <h1 class="display-4">QuickGo</h1>
+            <p class="lead">Compare and Book the Cheapest Cab with Ease</p>
+        </div>
+    </header>
+
+    <section class="search-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card p-5 shadow-lg search-card">
+                        <h4 class="text-center mb-4 text-secondary">Enter Pickup & Drop Locations</h4>
+                        <form id="locationForm">
+                            <div class="mb-3">
+                                <label for="pickup" class="form-label">Pickup Location</label>
+                                <input type="text" id="pickup" class="form-control" name="pickup" placeholder="Enter pickup location" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="drop" class="form-label">Drop Location</label>
+                                <input type="text" id="drop" name="drop" class="form-control" placeholder="Enter drop location" required>
+                            </div>
+
+                            <button id="compareFares" type="submit" class="btn btn-custom w-100 mt-3">Compare Fares</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById("locationForm").addEventListener("submit", async function(event) {
+            event.preventDefault();
+        
+            const pickup = document.getElementById("pickup").value;
+            const drop = document.getElementById("drop").value;
+        
+            if (!pickup || !drop) {
+                alert("Please enter both pickup and drop locations.");
+                return;
+            }
+        
+            try {
+                const response = await fetch("http://localhost:5500/getCabFare", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ pickup, drop })
+                });
+                
+                const fareData = await response.json();
+                
+                if (response.ok) {
+                    window.location.href = `fare-results.html?from=${encodeURIComponent(pickup)}&to=${encodeURIComponent(drop)}&fares=${encodeURIComponent(JSON.stringify(fareData))}`;
+                } else {
+                    alert("Failed to fetch fare data. Please try again.");
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                alert("Server error. Please check your backend.");
+            }
+        });
+    </script>
+</body>
+</html>

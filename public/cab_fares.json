@@ -1,0 +1,92 @@
+[
+  {
+    "from": "lohegaon",
+    "to": "pune railway station",
+    "fares": {
+      "uber": {"go": 150, "auto": 120, "sedan": 185, "xl": 255},
+      "ola": {"mini": 143, "auto": 115, "prime_plus": 192, "prime_sedan": 229},
+      "rapido": {"auto": 141, "cab_economy": 145, "cab_premium": 189}
+    }
+  },
+  {
+    "from": "shivaji nagar",
+    "to": "hadapsar",
+    "fares": {
+      "uber": {"go": 175, "auto": 132, "sedan": 197, "xl": 268},
+      "ola": {"mini": 157, "auto": 124, "prime_plus": 208, "prime_sedan": 239},
+      "rapido": {"auto": 136, "cab_economy": 140, "cab_premium": 201}
+    }
+  },
+  {
+    "from": "kothrud",
+    "to": "hinjewadi",
+    "fares": {
+      "uber": {"go": 193, "auto": 141, "sedan": 212, "xl": 277},
+      "ola": {"mini": 169, "auto": 127, "prime_plus": 221, "prime_sedan": 254},
+      "rapido": {"auto": 148, "cab_economy": 152, "cab_premium": 210}
+    }
+  },
+  {
+    "from": "swargate",
+    "to": "viman nagar",
+    "fares": {
+      "uber": {"go": 162, "auto": 128, "sedan": 189, "xl": 251},
+      "ola": {"mini": 149, "auto": 119, "prime_plus": 195, "prime_sedan": 225},
+      "rapido": {"auto": 132, "cab_economy": 135, "cab_premium": 193}
+    }
+  },
+  {
+    "from": "baner",
+    "to": "magarpatta",
+    "fares": {
+      "uber": {"go": 202, "auto": 150, "sedan": 224, "xl": 289},
+      "ola": {"mini": 179, "auto": 138, "prime_plus": 233, "prime_sedan": 269},
+      "rapido": {"auto": 157, "cab_economy": 161, "cab_premium": 220}
+    }
+  },
+  {
+    "from": "fc road",
+    "to": "wakad",
+    "fares": {
+      "uber": {"go": 189, "auto": 137, "sedan": 211, "xl": 273},
+      "ola": {"mini": 165, "auto": 125, "prime_plus": 218, "prime_sedan": 252},
+      "rapido": {"auto": 144, "cab_economy": 148, "cab_premium": 209}
+    }
+  },
+  {
+    "from": "camp",
+    "to": "katraj",
+    "fares": {
+      "uber": {"go": 168, "auto": 129, "sedan": 195, "xl": 249},
+      "ola": {"mini": 152, "auto": 118, "prime_plus": 199, "prime_sedan": 228},
+      "rapido": {"auto": 130, "cab_economy": 135, "cab_premium": 191}
+    }
+  },
+  {
+    "from": "wagholi",
+    "to": "deccan gymkhana",
+    "fares": {
+      "uber": {"go": 207, "auto": 154, "sedan": 231, "xl": 294},
+      "ola": {"mini": 183, "auto": 142, "prime_plus": 238, "prime_sedan": 273},
+      "rapido": {"auto": 160, "cab_economy": 165, "cab_premium": 226}
+    }
+  },
+  {
+    "from": "bavdhan",
+    "to": "karve nagar",
+    "fares": {
+      "uber": {"go": 155, "auto": 118, "sedan": 181, "xl": 245},
+      "ola": {"mini": 147, "auto": 116, "prime_plus": 189, "prime_sedan": 221},
+      "rapido": {"auto": 128, "cab_economy": 133, "cab_premium": 186}
+    }
+  },
+  {
+    "from": "pimpri",
+    "to": "hadapsar",
+    "fares": {
+      "uber": {"go": 220, "auto": 160, "sedan": 250, "xl": 310},
+      "ola": {"mini": 195, "auto": 150, "prime_plus": 260, "prime_sedan": 295},
+      "rapido": {"auto": 170, "cab_economy": 175, "cab_premium": 245}
+    }
+  }
+]

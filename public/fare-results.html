@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fare Comparison</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Fare Comparison</h1>
+        <div class="route-box">
+            <span id="source-destination"></span>
+        </div>
+        <div class="cab-section uber">
+            <h2>Uber</h2>
+            <div class="cab-type"><span>Go:</span> <span id="uber-go"></span></div>
+            <div class="cab-type"><span>Auto:</span> <span id="uber-auto"></span></div>
+            <div class="cab-type"><span>Go Sedan:</span> <span id="uber-sedan"></span></div>
+            <div class="cab-type"><span>UberXL:</span> <span id="uber-xl"></span></div>
+        </div>
+        <div class="cab-section ola">
+            <h2>Ola</h2>
+            <div class="cab-type"><span>Mini:</span> <span id="ola-mini"></span></div>
+            <div class="cab-type"><span>Auto:</span> <span id="ola-auto"></span></div>
+            <div class="cab-type"><span>Prime Plus:</span> <span id="ola-prime_plus"></span></div>
+            <div class="cab-type"><span>Prime Sedan:</span> <span id="ola-prime_sedan"></span></div>
+        </div>
+        <div class="cab-section rapido">
+            <h2>Rapido</h2>
+            <div class="cab-type"><span>Auto:</span> <span id="rapido-auto"></span></div>
+            <div class="cab-type"><span>Cab Economy:</span> <span id="rapido-cab_economy"></span></div>
+            <div class="cab-type"><span>Cab Premium:</span> <span id="rapido-cab_premium"></span></div>
+            <div id="fare-container"></div>
+        </div>
+    </div>
+    <script src="fetchFares.js"></script>
+</body>
+</html>
