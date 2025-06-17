@@ -27,7 +27,7 @@
 ### 1. Clone the Repository
 
 ```
-git clone https://github.com/prajscoops/QuickGo---Compare-cab-fares.git
+git clone https://github.com/prajscoops/Cabsy---Compare-cab-fares.git
 cd quickgo-cab-fare-app
 ```
 
